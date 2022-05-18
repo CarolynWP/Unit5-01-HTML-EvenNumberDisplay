@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Meta data -->
+		<meta charset="utf-8" />
+    <meta name="description" content="Numbers" />
+    <meta name="keywords" content="immaculata ics2o" />
+    <meta name="author" content="Carolyn" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Holly Tree Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+		<!-- JS -->
+		<script src="./js/script.js"></script>
+		
+		<!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Numbers</title>
+		
+			<!-- MDL -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-purple.min.css" />
+	</head>
+	
+	<!-- Body -->
+	<body>
+		
+		<!-- MDL 2 -->
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+		<div class="margin">
+			<h2>Hi! I love numbers.</h2>
+			<img src="./images/number.png" width="200px" alt="number guy">
+			<h4>Give me a minimum and maximum number and I will display all the numbers in between!</h4>
+			<h5>(No decimals allowed)</h5>
+				<div class="zoom">
+					
+					<!-- Minimum Number Textfield-->
+					<form action="#">
+					  <div class="mdl-textfield mdl-js-textfield">
+					    <input class="mdl-textfield__input" type="number" step="1" id="min">
+					    <label class="mdl-textfield__label" for="min">Minimum number</label>
+					    <span class="mdl-textfield__error">This input is not valid >:(</span>
+					  </div>
+						<br>
+					<!-- Maximum Number Textfield-->
+					  <div class="mdl-textfield mdl-js-textfield">
+					    <input class="mdl-textfield__input" type="number" step="1" id="max">
+					    <label class="mdl-textfield__label" for="max">Maximum number</label>
+					    <span class="mdl-textfield__error">This input is not valid >:(</span>
+					  </div>
+					</form>
+				</div>	
+			
+				<!-- Button to calculate numbers-->
+				<button onclick="numberCounting()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					Display Numbers
+				</button>
+				<br>
+				<br>
+				<h5><div id="numbers"></h5>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
