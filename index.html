@@ -37,9 +37,9 @@
 			<img src="./images/number.png" width="200px" alt="number guy">
 			<h4>Give me a minimum and maximum number and I will display all the numbers in between!</h4>
 			<h5>(No decimals allowed)</h5>
-				<div class="zoom">
-					
-					<!-- Minimum Number Textfield-->
+			<div class="zoom">
+				
+				<!-- Minimum Number Textfield-->
 					<form action="#">
 					  <div class="mdl-textfield mdl-js-textfield">
 					    <input class="mdl-textfield__input" type="number" step="1" id="min">
@@ -47,6 +47,7 @@
 					    <span class="mdl-textfield__error">This input is not valid >:(</span>
 					  </div>
 						<br>
+						
 					<!-- Maximum Number Textfield-->
 					  <div class="mdl-textfield mdl-js-textfield">
 					    <input class="mdl-textfield__input" type="number" step="1" id="max">
@@ -54,17 +55,15 @@
 					    <span class="mdl-textfield__error">This input is not valid >:(</span>
 					  </div>
 					</form>
-				</div>	
 			
 				<!-- Button to calculate numbers-->
 				<button onclick="numberCounting()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 					Display Numbers
 				</button>
+			</div>
 				<br>
 				<br>
 				<h5><div id="numbers"></h5>
 			</div>
-		</div>
-	</div>
 	</body>
 </html>

@@ -1,4 +1,5 @@
 //use strict
+"use strict"
 
 function numberCounting(){
 	// variables
@@ -7,11 +8,12 @@ function numberCounting(){
 	let counter = minNumber
 	let numbers = ""
 
-	//if statement for if the user is over 18
+	//while statement to display all the user's numbers
 	 while (counter <= maxNumber) {
 		numbers = numbers + counter + "<br>"
 		counter = counter + 1
 	} 
 
+	//output
 	document.getElementById("numbers").innerHTML = numbers
 }
